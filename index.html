@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOO의 포트폴리오</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* You can add custom styles here if needed */
+        body {
+            font-family: 'Pretendard', sans-serif; /* A popular Korean font */
+        }
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-4xl px-4 py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-gray-900 mb-4">OOO 포트폴리오</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                기술을 통해 문제를 해결하고 가치를 창출하는 개발자 OOO입니다. 빅데이터 분석, 클라우드 자동화, 웹 개발 및 PM 경험을 통해 복잡한 문제를 해결하는 데 강점이 있습니다.
+            </p>
+        </header>
+
+        <!-- Core Competencies Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-500 pb-2 mb-8">💡 핵심 역량</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-3">AI & Big Data</h3>
+                    <p class="text-gray-700">Python, TensorFlow/PyTorch, Scikit-learn, 데이터 전처리 및 분석, AI 모델링</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-3">Web Development</h3>
+                    <p class="text-gray-700">JavaScript, React/Vue, Node.js, Python/Django, RESTful API</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-3">Cloud & Infra</h3>
+                    <p class="text-gray-700">AWS (EC2, S3, RDS, Lambda), Docker, CI/CD, Linux, iptables</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-3">Project Management</h3>
+                    <p class="text-gray-700">Agile, Scrum, Jira, Confluence, 제품 기획 및 로드맵 관리</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold border-b-2 border-blue-500 pb-2 mb-8">🚀 프로젝트 경험</h2>
+            <div class="space-y-12">
+                <!-- Project 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">1. 빅데이터 기반 AI 분석 모델 개발</h3>
+                    <p class="text-sm text-gray-500 mb-4">YYYY.MM ~ YYYY.MM</p>
+                    <p class="mb-4">
+                        [어떤 종류의] 데이터를 분석하여 [어떤 것을] 예측/분류하는 AI 모델을 개발했습니다. 대용량 데이터 처리부터 모델 서빙까지 전 과정을 경험했습니다.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">주요 역할 및 성과:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>데이터 수집 및 전처리 파이프라인 구축 (처리 성능 N% 개선)</li>
+                            <li>[사용한 AI 모델]을 활용한 모델 학습 및 하이퍼파라미터 튜닝 (정확도 N% 달성)</li>
+                            <li>모델 API 개발 및 서빙 환경 구축</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">TensorFlow</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Pandas</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">2. iptables 규칙 기반 DoS 공격 방어 프로그램</h3>
+                    <p class="text-sm text-gray-500 mb-4">YYYY.MM ~ YYYY.MM</p>
+                    <p class="mb-4">
+                        리눅스 방화벽 도구인 iptables를 활용하여 비정상적인 트래픽을 감지하고 자동으로 차단 규칙을 생성하는 DoS 공격 방어 시스템을 개발했습니다.
+                    </p>
+                     <div class="mb-4">
+                        <h4 class="font-semibold mb-2">주요 역할 및 성과:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>실시간 네트워크 패킷 분석 및 모니터링 기능 구현</li>
+                            <li>공격 패턴 정의 및 동적 차단 규칙 생성 로직 개발</li>
+                            <li>시스템 부하 테스트 및 안정성 검증</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">C/C++</span>
+                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Linux</span>
+                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">iptables</span>
+                    </div>
+                </div>
+                <!-- Add more projects here following the same structure -->
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section>
+            <h2 class="text-3xl font-bold border-b-2 border-blue-500 pb-2 mb-8">📜 논문 및 학술 활동</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md space-y-6">
+                <div>
+                    <h3 class="font-bold text-xl">"깃허브 API를 활용한 개발자 명함 자동 생성 시스템에 관한 연구"</h3>
+                    <p class="text-gray-600">[투고 저널명], [심사중 / 게재 확정] (YYYY.MM)</p>
+                </div>
+                <div class="border-t pt-6">
+                     <h3 class="font-bold text-xl">"IoT 센서와 머신러닝을 이용한 자동화 쓰레기통 시스템 개발"</h3>
+                     <p class="text-gray-600">[학사/석사] 학위 논문 (YYYY.MM)</p>
+                     <p class="text-blue-600 font-semibold">[수상 내역, 예: OOO 공모전 최우수상] (YYYY.MM)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-gray-500">
+            <p>&copy; YYYY OOO. All Rights Reserved.</p>
+            <p class="mt-2">
+                <a href="[Your GitHub Link]" class="hover:text-blue-600">GitHub</a> | 
+                <a href="[Your Blog Link]" class="hover:text-blue-600">Blog</a> | 
+                <a href="mailto:[Your Email]" class="hover:text-blue-600">Email</a>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
