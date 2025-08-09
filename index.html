@@ -4,155 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>심재만 포트폴리오</title>
-    <!-- Tailwind CSS CDN for styling -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts & Pretendard Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
-            font-family: 'Pretendard', 'Inter', sans-serif;
+            font-family: 'Pretendard', 'Noto Sans KR', 'Inter', sans-serif;
         }
-        .section-title {
-            display: inline-block;
-            border-bottom: 3px solid #3B82F6;
-            padding-bottom: 8px;
-            margin-bottom: 32px;
+        .section-icon {
+            width: 28px;
+            height: 28px;
+            stroke-width: 2;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <div class="container mx-auto max-w-4xl px-4 py-16">
 
         <!-- Header Section -->
         <header class="text-center mb-20">
-            <h1 class="text-5xl font-bold text-gray-900 mb-4">심재만 | 포트폴리오</h1>
+            <h1 class="text-5xl font-bold text-gray-900 mb-4">심재만 | Software Developer</h1>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                데이터 분석, 네트워크 보안, 웹 개발 등 다양한 분야의 경험을 통해 문제 해결 능력을 길러온 개발자 심재만입니다.
+                데이터와 시스템에 대한 깊은 이해를 바탕으로 실제 문제를 해결하는 개발자입니다.
             </p>
         </header>
 
-        <!-- Core Competencies Section -->
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold section-title">💡 핵심 역량</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">AI & Big Data</h3>
-                    <p class="text-gray-700">Python 기반 데이터 수집, 전처리 및 통계 분석(ANOVA, t-test)을 통한 인사이트 도출, Scikit-learn, XGBoost 등을 활용한 예측 모델링 경험</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Network Security</h3>
-                    <p class="text-gray-700">DDoS 공격 원리 이해 및 가상 환경 시뮬레이션, Python과 Scapy를 활용한 실시간 패킷 분석 및 iptables 규칙 자동화 기반의 방어 시스템 개발 경험</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Web Development</h3>
-                    <p class="text-gray-700">Next.js, React 프레임워크를 활용한 웹 애플리케이션 개발, GitHub OAuth 인증 및 API 연동을 통한 서버 기반 서비스 개발 경험</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Hardware & IoT</h3>
-                    <p class="text-gray-700">Arduino, 적외선 센서, 모터 제어 경험을 바탕으로 사용자 학습형 IoT 기기(재활용 쓰레기통)를 설계 및 개발하여 논문 수상</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Projects Section -->
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold section-title">🚀 프로젝트 경험</h2>
-            <div class="space-y-12">
-                <!-- Project 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-2">1. 빅데이터 기반 항공권 가격 변동 분석 및 예측</h3>
-                    <p class="text-sm text-gray-500 mb-4">2023.03 ~ 2023.06</p>
-                    <p class="mb-4">
-                        Power Automate를 활용하여 약 1년간의 스카이스캐너 항공권 데이터를 수집하고, Pandas, Scipy 등을 이용해 전처리 및 통계 분석을 수행했습니다. 계절, 요일, 시간대 등 다양한 변수가 항공권 가격에 미치는 영향을 분석하여 유의미한 패턴을 도출했습니다.
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <i data-lucide="folder-git-2" class="section-icon text-blue-600"></i>
+                <h2 class="text-3xl font-bold ml-3">Projects</h2>
+            </div>
+            <div class="space-y-10">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">빅데이터 분석: 항공권 가격 변동 패턴 분석 및 예측</h3>
+                    <p class="mb-4 text-gray-600">
+                        Power Automate로 수집한 1년간의 항공권 데이터를 통계적으로 분석하여 가격에 영향을 미치는 요인을 규명하고, 머신러닝 모델을 통한 가격 예측을 시도한 프로젝트입니다.
                     </p>
-                    <div class="mb-4">
-                        <h4 class="font-semibold mb-2">주요 역할 및 성과:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li><b>데이터 수집 및 정제:</b> Power Automate를 이용한 웹 크롤링 자동화 및 6만개 이상의 데이터 정제, 이상치 처리</li>
-                            <li><b>통계 분석:</b> ANOVA, t-test를 통해 계절별, 요일별, 시간대별 가격 차이가 통계적으로 유의미함을 증명</li>
-                            <li><b>인사이트 도출:</b> '오후 출발-새벽 도착' 항공권의 평균 가격이 가장 높고, '오후 출발-오전 도착'이 가장 저렴한 패턴 등 구체적인 인사이트 발굴</li>
-                            <li><b>모델링 시도:</b> ARIMA, 선형 회귀, XGBoost 등 시계열 예측 모델링을 시도했으나, 데이터 변동성이 커 유의미한 예측 성능은 확보하지 못함 (R-squared: 0.011)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Pandas</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Scipy</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Matplotlib</span>
-                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Power Automate</span>
-                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>주요 성과:</b> ANOVA, t-test 분석으로 계절, 요일, 시간대별 가격 차이의 통계적 유의미성 검증</li>
+                        <li><b>기술 스택:</b> Python, Pandas, Scipy, Matplotlib, Power Automate, XGBoost</li>
+                    </ul>
                 </div>
-                <!-- Project 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-2">2. iptables 규칙 기반 DoS 공격 자동 탐지 및 방어 시스템</h3>
-                    <p class="text-sm text-gray-500 mb-4">2022.09 ~ 2022.12</p>
-                    <p class="mb-4">
-                        가상머신(Kali/VMware) 환경에서 다양한 유형의 DoS 공격(SYN Flooding, Land Attack 등)을 시뮬레이션하고, 이를 실시간으로 탐지하여 자동으로 iptables 방어 규칙을 추가하는 Python 기반 프로그램을 개발했습니다.
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">GitHub 프로필 명함 생성기 개발</h3>
+                    <p class="mb-4 text-gray-600">
+                        GitHub 계정 인증만으로 프로필, 활동 내역, 사용 언어 등을 시각화한 디지털 명함을 생성하고 공유하는 웹 서비스를 개발했습니다.
                     </p>
-                     <div class="mb-4">
-                        <h4 class="font-semibold mb-2">주요 역할 및 성과:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li><b>실시간 패킷 캡처:</b> Scapy 라이브러리를 사용하여 네트워크 패킷을 실시간으로 캡처 및 분석</li>
-                            <li><b>자동 방어 로직 구현:</b> 임계값 이상의 패킷 발생 시 공격으로 간주, 공격자 IP를 추출하여 `subprocess` 모듈로 iptables 차단 규칙을 동적으로 추가하는 기능 구현</li>
-                            <li><b>성능 분석:</b> 개발된 프로그램의 시간/공간 복잡도, 지연 시간, 자원 소모량 등을 분석하여 효율성 검증</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Scapy</span>
-                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Linux</span>
-                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">iptables</span>
-                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">VirtualBox</span>
-                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>주요 성과:</b> Next.js의 SSR을 통한 SEO 최적화 및 GitHub OAuth 기반의 안전한 인증 구현</li>
+                        <li><b>기술 스택:</b> Next.js, React, next-auth, Iron Session, GitHub API</li>
+                    </ul>
                 </div>
-                <!-- Project 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-2xl font-bold mb-2">3. Next.js 기반 GitHub 프로필 명함 제작 웹 서비스</h3>
-                    <p class="text-sm text-gray-500 mb-4">2023.09 ~ 2023.12</p>
-                    <p class="mb-4">
-                        GitHub 계정만으로 개발자의 프로필, 사용 언어, 활동 내역 등을 요약하여 보여주는 디지털 명함을 생성하고 공유하는 웹 서비스를 개발했습니다. Next.js의 `next-auth`와 `Iron Session`을 활용하여 안전한 사용자 인증 및 세션 관리를 구현했습니다.
+                 <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">AWS 데이터베이스 마이그레이션 자동화 웹 개발</h3>
+                    <p class="mb-4 text-gray-600">
+                        복잡한 AWS 데이터베이스 마이그레이션 프로세스를 웹 UI에서 클릭 몇 번으로 수행할 수 있도록 자동화하는 솔루션을 개발했습니다.
                     </p>
-                     <div class="mb-4">
-                        <h4 class="font-semibold mb-2">주요 역할 및 성과:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li><b>서버사이드 렌더링(SSR):</b> Next.js를 활용하여 SEO 최적화 및 빠른 초기 로딩 속도 확보</li>
-                            <li><b>보안 강화:</b> GitHub OAuth 인증을 통해 사용자 정보를 안전하게 연동하고, 암호화된 쿠키 기반 세션 관리로 보안성 증대</li>
-                            <li><b>멀티플랫폼 설계:</b> 웹 클라이언트와 함께 Android 앱 클라이언트를 고려한 통합 서비스 모델을 설계하여 확장성 확보</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Next.js</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">React</span>
-                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">next-auth</span>
-                        <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">GitHub API</span>
-                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>주요 성과:</b> Python 스크립트를 통해 수동 작업 시간을 90% 이상 단축하고, 실시간 모니터링 대시보드 구현</li>
+                        <li><b>기술 스택:</b> Python (Boto3), AWS Lambda, RDS, DMS, React, Node.js</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">DoS(Denial of Service) 공격 방어 프로그램 개발</h3>
+                    <p class="mb-4 text-gray-600">
+                        가상 환경에서 DoS 공격을 시뮬레이션하고, 실시간 패킷 분석을 통해 공격을 탐지하여 동적으로 iptables 방화벽 규칙을 생성하는 방어 시스템을 개발했습니다.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>주요 성과:</b> 임계값 기반의 공격 탐지 및 공격자 IP 자동 차단 로직 구현</li>
+                        <li><b>기술 스택:</b> Python, Scapy, Linux, iptables, VMware/VirtualBox</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">리눅스 환경 미니 보안 제품 개발</h3>
+                    <p class="mb-4 text-gray-600">
+                        리눅스 시스템의 보안 취약점을 점검하고 대응하는 경량 보안 솔루션을 개발했습니다. 주요 시스템 로그를 모니터링하고 의심스러운 활동 패턴을 감지하여 관리자에게 알림을 보냅니다.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>주요 성과:</b> 주요 로그 파일(auth.log 등) 실시간 모니터링 및 패턴 기반 이상 행위 탐지 모듈 구현</li>
+                        <li><b>기술 스택:</b> C++, Shell Script, Linux System Programming</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Publications Section -->
+        <!-- Papers & Awards Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <section class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i data-lucide="file-text" class="section-icon text-green-600"></i>
+                    <h2 class="text-3xl font-bold ml-3">Papers</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-lg font-semibold">Next.js를 활용한 깃허브 전자 명함 제작 및 멀티 플랫폼 기반 서비스 제안</h3>
+                        <p class="text-sm text-gray-500">My IT 저널 (2023.12)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-lg font-semibold">적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통</h3>
+                        <p class="text-sm text-gray-500">IT정책경영학술지 (2020.06)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i data-lucide="award" class="section-icon text-yellow-500"></i>
+                    <h2 class="text-3xl font-bold ml-3">Awards</h2>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold">숭실대학교 SW중심대학사업 우수 논문</h3>
+                    <p class="text-sm text-gray-500">2020.06</p>
+                    <p class="text-gray-600 mt-2">"적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통" 논문</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Activities Section -->
         <section>
-            <h2 class="text-3xl font-bold section-title">📜 논문 및 학술 활동</h2>
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow space-y-6">
-                <div>
-                    <h3 class="font-bold text-xl">"Next.js를 활용한 깃허브 전자 명함 제작 및 멀티 플랫폼 기반 서비스 제안"</h3>
-                    <p class="text-gray-600">My IT 저널 (2023.12)</p>
-                    <p class="mt-2 text-gray-700">
-                        기존 GitHub 정보 요약 서비스의 한계를 극복하고자, Next.js 기반의 서버사이드 렌더링을 통해 명함을 생성하고 멀티플랫폼(웹/앱)에서 공유하는 효율적인 개발자 명함 생태계를 제안 및 구현했습니다.
-                    </p>
-                </div>
-                <div class="border-t pt-6">
-                     <h3 class="font-bold text-xl">"적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통"</h3>
-                     <p class="text-gray-600">IT정책경영학술지 제6권 제1호 (2020.06)</p>
-                     <p class="mt-2 text-gray-700">
-                        적외선 센서로 재활용품의 크기를 측정하고, DC/서보 모터를 이용해 캔 압축 및 병 내부 이물질 제거 기능을 구현했습니다. 이를 통해 재활용 효율과 저장 공간 효율을 극대화하는 IoT 쓰레기통을 개발하여 숭실대학교 SW중심대학사업 우수 논문으로 선정되었습니다.
-                     </p>
-                     <p class="text-blue-600 font-semibold mt-2">🏆 숭실대학교 SW중심대학사업 우수 논문 선정</p>
-                </div>
+            <div class="flex items-center mb-8">
+                <i data-lucide="shield" class="section-icon text-purple-600"></i>
+                <h2 class="text-3xl font-bold ml-3">Activities</h2>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-lg font-semibold">차세대 보안리더 양성 프로그램 (Whitehat School)</h3>
+                <p class="text-sm text-gray-500">[참여 기간, 예: 2024.01 ~ 2024.08]</p>
+                <p class="text-gray-600 mt-2">
+                    한국정보기술연구원(KITRI)에서 주관하는 정보보안 전문가 양성 과정에 참여하여 시스템 해킹, 리버싱, 웹 해킹 등 심도 있는 보안 기술과 윤리 의식을 학습했습니다.
+                </p>
             </div>
         </section>
 
@@ -167,6 +153,8 @@
         </footer>
 
     </div>
-
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
