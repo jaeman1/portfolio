@@ -1,160 +1,424 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaeman's portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts & Pretendard Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Pretendard', 'Noto Sans KR', 'Inter', sans-serif;
-        }
-        .section-icon {
-            width: 28px;
-            height: 28px;
-            stroke-width: 2;
-        }
+      body {
+        font-family: "Pretendard", "Noto Sans KR", "Inter", sans-serif;
+      }
+      .section-icon {
+        width: 28px;
+        height: 28px;
+        stroke-width: 2;
+      }
     </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
-
+  </head>
+  <body class="bg-gray-50 text-gray-800">
     <div class="container mx-auto max-w-4xl px-4 py-16">
+      <!-- Header Section -->
+      <header class="text-center mb-20">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">
+          Jaeman Shim | Software Developer
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          보안지식을 겸비한 개발자 && 개발 역량을 갖춘 보안전문가
+        </p>
+      </header>
 
-        <!-- Header Section -->
-        <header class="text-center mb-20">
-            <h1 class="text-5xl font-bold text-gray-900 mb-4">Jaeman Shim | Software Developer</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                보안지식을 겸비한 개발자 && 개발 역량을 갖춘 보안전문가.
-            </p>
-        </header>
-
-        <!-- Projects Section -->
-        <section class="mb-16">
-            <div class="flex items-center mb-8">
-                <i data-lucide="folder-git-2" class="section-icon text-blue-600"></i>
-                <h2 class="text-3xl font-bold ml-3">Projects</h2>
-            </div>
-            <div class="space-y-10">
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-bold mb-2">빅데이터 분석: 항공권 가격 변동 패턴 분석 및 예측</h3>
-                    <p class="mb-4 text-gray-600">
-                        Power Automate로 수집한 1년간의 항공권 데이터를 통계적으로 분석하여 가격에 영향을 미치는 요인을 규명하고, 머신러닝 모델을 통한 가격 예측을 시도한 프로젝트입니다.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li><b>주요 성과:</b> ANOVA, t-test 분석으로 계절, 요일, 시간대별 가격 차이의 통계적 유의미성 검증</li>
-                        <li><b>기술 스택:</b> Python, Pandas, Scipy, Matplotlib, Power Automate, XGBoost</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-bold mb-2">GitHub 프로필 명함 생성기 개발</h3>
-                    <p class="mb-4 text-gray-600">
-                        GitHub 계정 인증만으로 프로필, 활동 내역, 사용 언어 등을 시각화한 디지털 명함을 생성하고 공유하는 웹 서비스를 개발했습니다.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li><b>주요 성과:</b> Next.js의 SSR을 통한 SEO 최적화 및 GitHub OAuth 기반의 안전한 인증 구현</li>
-                        <li><b>기술 스택:</b> Next.js, React, next-auth, Iron Session, GitHub API</li>
-                    </ul>
-                </div>
-                 <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-bold mb-2">AWS 데이터베이스 마이그레이션 자동화 웹 개발</h3>
-                    <p class="mb-4 text-gray-600">
-                        복잡한 AWS 데이터베이스 마이그레이션 프로세스를 웹 UI에서 클릭 몇 번으로 수행할 수 있도록 자동화하는 솔루션을 개발했습니다.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li><b>주요 성과:</b> Python 스크립트를 통해 수동 작업 시간을 90% 이상 단축하고, 실시간 모니터링 대시보드 구현</li>
-                        <li><b>기술 스택:</b> Python (Boto3), AWS Lambda, RDS, DMS, React, Node.js</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-bold mb-2">DoS(Denial of Service) 공격 방어 프로그램 개발</h3>
-                    <p class="mb-4 text-gray-600">
-                        가상 환경에서 DoS 공격을 시뮬레이션하고, 실시간 패킷 분석을 통해 공격을 탐지하여 동적으로 iptables 방화벽 규칙을 생성하는 방어 시스템을 개발했습니다.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li><b>주요 성과:</b> 임계값 기반의 공격 탐지 및 공격자 IP 자동 차단 로직 구현</li>
-                        <li><b>기술 스택:</b> Python, Scapy, Linux, iptables, VMware/VirtualBox</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-bold mb-2">리눅스 환경 미니 보안 제품 개발 (PM)</h3>
-                    <p class="mb-4 text-gray-600">
-                        리눅스 시스템의 보안 취약점을 점검하고 대응하는 경량 보안 솔루션을 개발했습니다. 주요 시스템 로그를 모니터링하고 의심스러운 활동 패턴을 감지하여 관리자에게 알림을 보냅니다.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li><b>주요 성과:</b> 1. 파일 무결성 모니터링 2. 시그니처 기반 악성코드 탐지 3. 로그분석 악성행위 탐지</li>
-                        <li><b>기술 스택:</b> C++, Shell Script, Linux System Programming</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Papers & Awards Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <section class="mb-16">
-                <div class="flex items-center mb-8">
-                    <i data-lucide="file-text" class="section-icon text-green-600"></i>
-                    <h2 class="text-3xl font-bold ml-3">Papers</h2>
-                </div>
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h3 class="text-lg font-semibold">Next.js를 활용한 깃허브 전자 명함 제작 및 앱, 웹 멀티 플랫폼 기반 서비스를 통한 효율적인 개발자 명함 생태계 구축</h3>
-                        <p class="text-sm text-gray-500">한국정보처리학회 ASK 2023 (춘계학술대회 및 학부생논문경진대회)에 해당하는 논문 투고</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h3 class="text-lg font-semibold">적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통</h3>
-                        <p class="text-sm text-gray-500">한국IT정책경영학회에서 주최하는 학술대회에 해당하는 논문 투고</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-16">
-                <div class="flex items-center mb-8">
-                    <i data-lucide="award" class="section-icon text-yellow-500"></i>
-                    <h2 class="text-3xl font-bold ml-3">Awards</h2>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <h3 class="text-lg font-semibold">적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통 우수 논문</h3>
-                    <p class="text-sm text-gray-500">한국IT정책경영학회</p>
-                    <p class="text-gray-600 mt-2">‘적외선 센서와 모터를 내장한 사용자 학습형 재활용 쓰레기통’이라는 주제로 연구 논문을 발표하였습니다. 본 논문은 인공지능 기반 재활용 로봇이 상용화된 현 시점에서도, 소비자의 참여를 더욱 효과적으로 유도할 수 있는 방법을 모색한 연구로 이 연구의 실현을 위해 아두이노를 활용하여 혁신적인 프로토타입을 개발하였고, 실제 시연까지 진행</p>
-                </div>
-            </section>
+      <!-- Projects Section -->
+      <section class="mb-16">
+        <div class="flex items-center mb-8">
+          <i data-lucide="folder-git-2" class="section-icon text-blue-600"></i>
+          <h2 class="text-3xl font-bold ml-3">Projects</h2>
         </div>
+        <div class="space-y-10">
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <a
+              href="https://github.com/jaeman1/flight-price-analysis"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-xl font-bold mb-2 group-hover:underline group-hover:text-blue-700 transition-colors"
+              >
+                빅데이터 분석: 항공권 가격 변동 패턴 분석 및 예측
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-blue-700 transition-colors"
+              ></i>
+            </a>
+            <p class="mb-4 text-gray-600">
+              Power Automate로 수집한 1년간의 항공권 데이터를 통계적으로
+              분석하여 가격에 영향을 미치는 요인을 규명하고, 머신러닝 모델을
+              통한 가격 예측을 시도한 프로젝트입니다.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>
+                <b>주요 성과:</b> ANOVA, t-test 분석으로 계절, 요일, 시간대별
+                가격 차이의 통계적 유의미성 검증
+              </li>
+              <li>
+                <b>기술 스택:</b> Python, Pandas, Scipy, Matplotlib, Power
+                Automate, XGBoost
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <a
+              href="https://github.com/jaeman1/Git_Business_Card_Web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-xl font-bold mb-2 group-hover:underline group-hover:text-blue-700 transition-colors"
+              >
+                GitHub 프로필 명함 생성기 개발
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-blue-700 transition-colors"
+              ></i>
+            </a>
+            <p class="mb-4 text-gray-600">
+              GitHub 계정 인증만으로 프로필, 활동 내역, 사용 언어 등을 시각화한
+              디지털 명함을 생성하고 공유하는 웹 서비스를 개발했습니다.
+            </p>
+            <div class="mt-6 mb-4 bg-gray-200 p-4 rounded-lg">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-center font-semibold mb-2 text-gray-700">
+                    Web 시연 영상
+                  </p>
+                  <video
+                    src="assets/github_business_card_web.mp4"
+                    controls
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                    class="block mx-auto rounded-md shadow-sm h-auto"
+                  ></video>
+                </div>
+                <div>
+                  <p class="text-center font-semibold mb-2 text-gray-700">
+                    App 시연 영상
+                  </p>
+                  <video
+                    src="assets/github_business_card_app.mp4"
+                    controls
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                    class="block mx-auto rounded-md shadow-sm h-auto max-h-[250px]"
+                  ></video>
+                </div>
+              </div>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>
+                <b>주요 성과:</b> Next.js의 SSR을 통한 SEO 최적화 및 GitHub
+                OAuth 기반의 안전한 인증 구현
+              </li>
+              <li>
+                <b>기술 스택:</b> Next.js, React, next-auth, Iron Session,
+                GitHub API
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <a
+              href="https://github.com/jaeman1/aws-db-migration-automator"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-xl font-bold mb-2 group-hover:underline group-hover:text-blue-700 transition-colors"
+              >
+                AWS 데이터베이스 마이그레이션 자동화 웹 개발
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-blue-700 transition-colors"
+              ></i>
+            </a>
+            <p class="mb-4 text-gray-600">
+              복잡한 AWS 데이터베이스 마이그레이션 프로세스를 웹 UI에서 클릭 몇
+              번으로 수행할 수 있도록 자동화하는 솔루션을 개발했습니다.
+            </p>
+            <div class="mt-6 mb-4 bg-gray-200 p-4 rounded-lg">
+              <p class="text-center font-semibold mb-2 text-gray-700">
+                웹 시연 영상
+              </p>
+              <video
+                src="assets/캡스톤 웹.mp4"
+                controls
+                muted
+                loop
+                autoplay
+                playsinline
+                class="rounded-md shadow-sm w-full"
+              ></video>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>
+                <b>주요 성과:</b> Python 스크립트를 통해 수동 작업 시간을 90%
+                이상 단축하고, 실시간 모니터링 대시보드 구현
+              </li>
+              <li>
+                <b>기술 스택:</b> Python (Boto3), AWS Lambda, RDS, DMS, React,
+                Node.js
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <a
+              href="https://github.com/jaeman1/Network-Programming-Dos-Defense"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-xl font-bold mb-2 group-hover:underline group-hover:text-blue-700 transition-colors"
+              >
+                DoS(Denial of Service) 공격 방어 프로그램 개발
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-blue-700 transition-colors"
+              ></i>
+            </a>
+            <p class="mb-4 text-gray-600">
+              가상 환경에서 DoS 공격을 시뮬레이션하고, 실시간 패킷 분석을 통해
+              공격을 탐지하여 동적으로 iptables 방화벽 규칙을 생성하는 방어
+              시스템을 개발했습니다.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>
+                <b>주요 성과:</b> 임계값 기반의 공격 탐지 및 공격자 IP 자동 차단
+                로직 구현
+              </li>
+              <li>
+                <b>기술 스택:</b> Python, Scapy, Linux, iptables,
+                VMware/VirtualBox
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <a
+              href="https://github.com/WHS-ManLab/ManLab"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-xl font-bold mb-2 group-hover:underline group-hover:text-blue-700 transition-colors"
+              >
+                리눅스 환경 미니 보안 제품 개발
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-blue-700 transition-colors"
+              ></i>
+            </a>
+            <p class="mb-4 text-gray-600">
+              리눅스 시스템의 보안 취약점을 점검하고 대응하는 경량 보안 솔루션을
+              개발했습니다. 주요 시스템 로그를 모니터링하고 의심스러운 활동
+              패턴을 감지하여 관리자에게 알림을 보냅니다.
+            </p>
+            <div class="mt-6 mb-4 bg-gray-200 p-4 rounded-lg">
+              <p class="text-center font-semibold mb-2 text-gray-700">
+                웹 시연 영상
+              </p>
+              <video
+                src="assets/전체 시연영상.mp4"
+                controls
+                muted
+                loop
+                autoplay
+                playsinline
+                class="rounded-md shadow-sm w-full"
+              ></video>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>
+                <b>주요 성과:</b> 1. 파일 무결성 모니터링 2. 시그니처 기반
+                악성코드 탐지 3. 로그분석 악성행위 탐지
+              </li>
+              <li>
+                <b>기술 스택:</b> C++, Shell Script, Linux System Programming
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Activities Section -->
-        <section>
-            <div class="flex items-center mb-8">
-                <i data-lucide="shield" class="section-icon text-purple-600"></i>
-                <h2 class="text-3xl font-bold ml-3">Activities</h2>
+      <!-- Papers & Awards Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <section class="mb-16">
+          <div class="flex items-center mb-8">
+            <i data-lucide="file-text" class="section-icon text-green-600"></i>
+            <h2 class="text-3xl font-bold ml-3">Papers</h2>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <a
+                href="https://kiss.kstudy.com/Detail/Ar?key=4028522"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center group"
+              >
+                <h3
+                  class="text-lg font-semibold group-hover:underline group-hover:text-green-700 transition-colors"
+                >
+                  Next.js를 활용한 깃허브 전자 명함 제작 및 앱, 웹 멀티 플랫폼
+                  기반 서비스를 통한 효율적인 개발자 명함 생태계 구축
+                </h3>
+                <i
+                  data-lucide="arrow-up-right"
+                  class="w-4 h-4 ml-2 text-gray-400 group-hover:text-green-700 transition-colors"
+                ></i>
+              </a>
+              <p class="text-sm text-gray-500 mt-2">
+                한국정보처리학회 ASK 2023 (춘계학술대회 및 학부생논문경진대회)에
+                해당하는 논문 투고
+              </p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-md">
-                <h3 class="text-lg font-semibold">차세대 보안리더 양성 프로그램 (Whitehat School)</h3>
-                <p class="text-sm text-gray-500">[참여 기간, 예: 2024.01 ~ 2024.08]</p>
-                <p class="text-gray-600 mt-2">
-                    한국정보기술연구원(KITRI)에서 주관하는 정보보안 전문가 양성 과정에 참여하여 시스템 해킹, 리버싱, 웹 해킹 등 심도 있는 보안 기술과 윤리 의식을 학습했습니다.
-                </p>
+              <a
+                href="assets/적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통 논문.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center group"
+              >
+                <h3
+                  class="text-lg font-semibold group-hover:underline group-hover:text-green-700 transition-colors"
+                >
+                  적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통
+                </h3>
+                <i
+                  data-lucide="arrow-up-right"
+                  class="w-4 h-4 ml-2 text-gray-400 group-hover:text-green-700 transition-colors"
+                ></i>
+              </a>
+              <p class="text-sm text-gray-500 mt-2">
+                한국IT정책경영학회에서 주최하는 학술대회에 해당하는 논문 투고
+              </p>
             </div>
+          </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="text-center mt-20 text-gray-500">
-            <p>&copy; 2025 심재만. All Rights Reserved.</p>
-            <p class="mt-2">
-                <a href="[Your GitHub Link]" class="hover:text-blue-600">GitHub</a> | 
-                <a href="[Your Blog Link]" class="hover:text-blue-600">Blog</a> | 
-                <a href="mailto:simwin@soongsil.ac.kr" class="hover:text-blue-600">Email</a>
+        <section class="mb-16">
+          <div class="flex items-center mb-8">
+            <i data-lucide="award" class="section-icon text-yellow-500"></i>
+            <h2 class="text-3xl font-bold ml-3">Awards</h2>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <a
+              href="assets/논문 우수상.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center group"
+            >
+              <h3
+                class="text-lg font-semibold group-hover:underline group-hover:text-yellow-600 transition-colors"
+              >
+                적외선 센서 및 모터를 내장한 사용자 학습형 재활용 쓰레기통 우수
+                논문
+              </h3>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 ml-2 text-gray-400 group-hover:text-yellow-600 transition-colors"
+              ></i>
+            </a>
+            <p class="text-sm text-gray-500 mt-2">한국IT정책경영학회</p>
+            <p class="text-gray-600 mt-2">
+              ‘적외선 센서와 모터를 내장한 사용자 학습형 재활용 쓰레기통’이라는
+              주제로 연구 논문을 발표하였습니다. 본 논문은 인공지능 기반 재활용
+              로봇이 상용화된 현 시점에서도, 소비자의 참여를 더욱 효과적으로
+              유도할 수 있는 방법을 모색한 연구로 이 연구의 실현을 위해
+              아두이노를 활용하여 혁신적인 프로토타입을 개발하였고, 실제
+              시연까지 진행
             </p>
-        </footer>
+          </div>
+        </section>
+      </div>
 
+      <!-- Activities Section -->
+      <section>
+        <div class="flex items-center mb-8">
+          <i data-lucide="shield" class="section-icon text-purple-600"></i>
+          <h2 class="text-3xl font-bold ml-3">Activities</h2>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-lg font-semibold">
+            차세대 보안리더 양성 프로그램 (Whitehat School)
+          </h3>
+          <p class="text-sm text-gray-500">[3기]</p>
+          <p class="text-gray-600 mt-2">
+            한국정보기술연구원(KITRI)에서 주관하는 정보보안 전문가 양성 과정에
+            참여하여 시스템 해킹, 리버싱, 웹 해킹 등 심도 있는 보안 기술과 윤리
+            의식을 학습했습니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center mt-20 text-gray-500">
+        <p>&copy; 2024 심재만. All Rights Reserved.</p>
+        <p class="mt-2">
+          <a
+            href="https://github.com/jaeman1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-blue-600"
+            >GitHub</a
+          >
+          |
+          <a href="https://jaeman1.github.io" class="hover:text-blue-600"
+            >Blog</a
+          >
+          |
+          <a href="mailto:simwin@soongsil.ac.kr" class="hover:text-blue-600"
+            >Email</a
+          >
+        </p>
+      </footer>
     </div>
     <script>
       lucide.createIcons();
     </script>
-</body>
+  </body>
 </html>
